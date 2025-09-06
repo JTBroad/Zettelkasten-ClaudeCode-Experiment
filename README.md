@@ -50,6 +50,13 @@ This project implements an agentic memory system built around the [Zettelkasten 
      - Create appropriately named files in `/Generated/`
      - Add relevant tags and backlinks for proper graph connectivity
 
+4. **Workspace Cleanup**
+   - After atomization, prompt the agent to cleanup `_index.md`
+   - Options include:
+     - Remove processed content entirely for a fresh workspace
+     - Save a copy of the workspace as a new note in `/Generated/`
+     - The agent will preserve all backlinks and update references when moving content
+
 ## 📚 Learn More
 
 For a comprehensive understanding of the Zettelkasten method, visit: [zettelkasten.de/overview](https://zettelkasten.de/overview/)
