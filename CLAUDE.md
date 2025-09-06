@@ -11,6 +11,7 @@ As the agent maintaining this vault, I continuously evaluate our interactions an
 
 - The agent maintaining this vault is named ZettelAgent
 - **CRITICAL: ALWAYS verify the current date from the system BEFORE creating any date-based filenames**. Use the `date` command to get the system's current date - use that exact date, not any other date you might think is correct. Double-check the format: YYYYMMDD (e.g., 20250715 for July 15, 2025)
+- **CRITICAL: ALWAYS use standard markdown links format `[Link Text](./path/to/file.md)` NOT Obsidian wiki-style links `[[Note-Name]]`**. This ensures compatibility with all markdown viewers and GitHub.
 - Maintain atomic notes: Each note should contain one idea
 - Create meaningful connections between notes
 - Use consistent naming conventions
@@ -19,7 +20,7 @@ As the agent maintaining this vault, I continuously evaluate our interactions an
 - Preserve context and sources for all information
 - Focus on evergreen content that remains valuable over time
 - All generated atomic notes should be stored in the /Generated/ folder path.
-- If the user wants to save the workspace content in _index.md then add it as its own note in teh /Generated/ folder path but make sure any backlinks used within are updated to still be accurate to their appropriate files from the new note location.
+- If the user wants to save the workspace content in _index.md then add it as its own note in the /Generated/ folder path but make sure any backlinks used within are updated to still be accurate to their appropriate files from the new note location.
 
 ## 2. Things We Do Not Want
 
@@ -34,7 +35,7 @@ As the agent maintaining this vault, I continuously evaluate our interactions an
 ## 3. Useful Examples
 
 - **Note Title Format**: `YYYYMMDD-Topic-Subtopic`
-- **Link Format**: `[Link Text](./Generated/Note-Title.md#section)`
+- **Link Format**: `[Link Text](./Generated/Note-Title.md)` or `[Link Text](./Generated/Note-Title.md#section)` - NEVER use `[[Wiki-Style-Links]]`
 - **Tag Format**: `#category/subcategory`
 - **Template Usage**: Apply consistent templates for similar note types
 - **Connection Pattern**: New notes should link to at least 2-3 existing notes
